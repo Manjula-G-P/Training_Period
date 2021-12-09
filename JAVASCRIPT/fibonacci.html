@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+
+<body align="center">
+    <script>
+        document.write("<h1>The below Fibbonacci numbers upto 100<h1/>");
+        var num1 = 0, num2 = 1, nextnum;
+        function Fibonacci(n1, n2, n3) {
+            for(var i=0;i<=10;i++){
+                document.write(n1,"<br/>");
+                n3=n1+n2;
+                n1=n2;
+                n2=n3;
+            }
+        }
+        Fibonacci(num1, num2, nextnum)
+    </script>
+</body>
+
+</html>
