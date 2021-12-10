@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Variable</title>
+</head>
+<body>
+    <script>
+        const i="I am a global variable";
+
+        function show(){
+            var j="I am local variable";
+            document.write(i+"<br>"); //acessible Inside function
+            document.write(j+"<br>"); //acessible Inside function
+        }
+        show()
+
+        document.write(i+"<br>"); //  acessible outside function
+        // document.write(j+"<br>"); // not acessible outside function
+
+        function disp(){
+            document.write(i+"<br>"); //acessible Inside function
+            // document.write(j+"<br>"); // not acessible Inside function
+        }
+        disp()
+
+        if(true){
+            var d=12;
+            document.write(i+"<br>");
+            // document.write(j+"<br>");  //cannot accessible
+            document.write(d+"<br>"); // accessible
+
+        }
+    
+    </script>
+</body>
+</html>

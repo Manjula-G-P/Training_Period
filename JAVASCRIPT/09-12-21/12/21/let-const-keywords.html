@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using let and const keyword</title>
+</head>
+<body>
+    <script>
+        let a=3;
+        const z=50;
+        
+        if(true){
+            var i=20;  //accessible from anywhere
+        }
+        if(true){
+            let j=30;  //only accessible within block
+        }
+
+        //when we declare variable with let, it is only accessible within block
+
+        let b=6;
+        for(let c=1;c<=10;c++){
+            document.write(c+"<br/>");
+            document.write(b+"<br/>");   //cannot accessible
+        }
+        document.write(c) //cannot accessible
+    </script>
+</body>
+</html>

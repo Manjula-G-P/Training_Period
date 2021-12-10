@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern</title>
+</head>
+
+<body align="center">
+  <script>
+    document.write("<h1>Printng a acute-angled-triangle</h1>");
+    var no_of_rows = prompt("enter no of rows");
+
+    function pattern(n) {
+      for (let i = 1; i <= n; i++) {
+        let string = "";
+        for (let j = 0; j < n - i; j++) {
+          string += "  ";
+        }
+        for (let k = 0; k < i; k++) {
+          string += " *";
+        }
+        document.write(`<pre>${string}</pre>`);
+        console.log(string)
+
+      }
+    }
+    pattern(no_of_rows)
+
+
+  </script>
+</body>
+
+</html>

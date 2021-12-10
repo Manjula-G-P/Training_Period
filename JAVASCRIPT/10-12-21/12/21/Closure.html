@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure in Js</title>
+</head>
+<body>
+    <script>
+
+    // A closure is a functon havng access to the parent scope. It preserve the data from the outside.
+    //A closure is a iinner function that has access to the outer.
+
+    var i=10;
+    
+    function show(){
+        var j=20;
+        document.write(j+"<br>"); // accessible
+        document.write(i+"<br>"); // accessible
+    }
+    show();
+
+    // document.write(j+"<br>") // cannot accessble,Refrence error
+
+    document.write("<h1>Using Inner Function</h1>");
+
+    var a=10;
+
+    function OuterFun(){
+        var j="j is a local variable of outer function";    //local variable
+        document.write(j+"<br>");   // j is accessible in function.
+        // var k="k in outer scope"
+        function innerFunc(){
+            var k="k is a local variable of inner function";
+            var c=a+j+k;
+            document.write(k+"<br>"); // k is accessible inside fun
+            document.write(j+"<br>"); // j is accessible inside fun
+        }
+        innerFunc();
+        document.write(j+"<br>"); // j is accessible inside fun
+        document.write(k+"<br>"); // k is not accessible outside fun
+    }
+    OuterFun();
+    
+
+    </script>
+</body>
+</html>

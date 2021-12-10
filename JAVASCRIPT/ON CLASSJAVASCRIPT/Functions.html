@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //how function call works
+        document.write("First line <br/>");
+        display();
+        document.write("Hello <br/>");
+        function display(){
+            document.write("Inside Function <br>")   
+        }
+        display()
+        document.write("Last Line <br>")
+
+        document.write("<h1>Functons with parameters</h1><br>");
+        function display1(name){
+            document.write(name+"<br/>");
+            document.write("Sachi="+name.length)
+        }
+        display1("sachin")
+
+        document.write("<h1>Functon Argument Missing</h1><br>");   
+        function add(a,b,c){
+            document.write("A:"+a+"B:"+b+"C:"+c);
+        }  
+        add(10,20);
+
+        document.write("<h1>Too many function argument</h1><br>");  
+        document.write("<h1>Extra argument can be accesd using arguments object</h1><br>"); 
+        function add1(a,b){
+            document.write(" A: " + a + " B: " + b );
+        }   
+        add1(10,20,30);
+
+        document.write("<h1>Default Parameters</h1><br>"); 
+        function add2(a,b,c=70){
+            document.write(" A= " + a + "<br>");
+            document.write(" B= " + b + "<br>");
+            document.write(" C= " + c + "<br>");
+            document.write("*********** <br>")
+        }
+        add2(10,20);
+        add2(10,20,30);
+        add2(10);
+
+        document.write("<h1>Default parameter</h1><br>"); 
+        document.write("<h1>Array</h1><br>"); 
+        function add3(num, a=["Hello","World"]){
+            document.write("NUM= " + num + "<br>");
+            document.write("A= " + a[0] + "<br>");
+            document.write("A= " + a[1] + "<br>");
+        }
+        add3(20,[10,40]);
+        add3(10,20);
+        add3(10);
+        
+        document.write("<h1>Using argument method</h1><br>"); 
+        function arg1(name){
+            document.write(arguments[0]+"<br/>");
+        }
+        arg1("Hello");    //arguments=["Hello"]
+
+        function arg2(name1,name2){
+            arguments[0]= "Hello"
+            document.write(arguments[0] + " " + arguments[1]+"<br/>");
+        }
+        arg2("Hi","World");    //arguments=["Hi","World"]
+
+        function arg3(name1,name2){
+            arguments[0]= "Hello"
+            document.write("length=" + arguments.length+"<br/>");
+        }
+        arg3("Hi","Hello","World");    //arguments=["Hi","Hello","World"]
+
+        function arg4(name1,name2){
+            for(var i=0;i<arguments.length;i++){
+                document.write(arguments[i] + " ")
+            }
+            docu
+        }
+        arg4("Hello","World");    //arguments=["Hi","World"]
+
+        function arg5(name1,name2){
+            arguments[0]= "Hi";
+            for(var i=0;i<arguments.length;i++){
+                document.write(arguments[i] + " ")
+            }
+            
+        }
+        arg5("Hello","World");    //arguments=["Hi","World"]
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel or Consonent</title>
+</head>
+<body>
+    <script>
+        let ch=prompt("enter a chracter:")
+        let lower_case_vowel=(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u');
+        let upper_case_vowel=(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U');
+
+    var chracter=function(lower,upper,ch){
+
+        if(lower || upper){
+            document.write(ch," is a Vowel");
+        }
+        else{
+            document.write(ch," is Consonent");
+        }
+        
+
+    }
+    chracter(lower_case_vowel,upper_case_vowel,ch)
+    </script>
+</body>
+</html>

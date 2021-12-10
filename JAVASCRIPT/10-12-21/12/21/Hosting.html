@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Hoisting in Js</title>
+</head>
+<body>
+    <script>
+        
+        //It is js default behavior of moving declaraton to the top of function or top of global context, if outside a function.
+
+        i="Hello";   //variable hosting
+        document.write(i+"<br>"); // its accessible
+        var i;
+
+        print() // calling function
+
+        function print(){
+            var k;     //var k=30;
+            k=30;
+            document.write(i+"<br>"); // cannot access
+            i="pune";
+            document.write(i+"<br>"); // its accessible
+            var i;
+        }
+        document.write(k+"<br>"); //reference error
+
+    </script>
+</body>
+</html>
