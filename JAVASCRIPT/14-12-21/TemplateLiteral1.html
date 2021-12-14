@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemplateLiteal</title>
+</head>
+<body>
+    <script>
+        //without template literal
+        var str1="Hello";
+        document.write("<h1>" + str1 + "</h1>");
+        // document.write("<h1>" + "Hello   ///syntax eror
+        //     Javascript" + "</h1>");
+        // document.write("<h1>" + str1 +"world!!!"+ "<
+        //     /h1>");
+
+        //But with the help of template literal u can easily achieve it .you need not to use + to frequently join stings.
+        var str="Hello world";
+        document.write(`${3+5}`);
+        document.write(`${str} <br/> ${str1} 
+        <h1>World123</h1>
+        <h2> Hello h2 </h2>
+        `); // we can easily add string without + sign 
+
+
+
+
+
+    </script>
+</body>
+</html>
