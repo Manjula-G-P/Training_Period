@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexOf() Method</title>
+</head>
+<body>
+    <script>
+        //indexOf() Method.
+        /* The indexOf() method takes a string argument and returns the index of the first occurenceof the argument 
+        in the string. If the argumnent is not found returns -1.This method also accepts an optional second argument
+        that specifies the index at which to start the search. */
+        //the indexOf() Method cannot take powerfull search values (regular expressions).
+
+        var str="Hello friends how are you";
+        document.write(str.indexOf("e")+"<br>");//1, gives first occurence only.
+        document.write(str.indexOf("e",10)+"<br>")//20, start from 10th index.
+        document.write(str.indexOf("are")+"<br>")//18,
+        document.write(str.indexOf("z")+"<br>")//-1, z is not in the string.
+    </script>
+</body>
+</html>
