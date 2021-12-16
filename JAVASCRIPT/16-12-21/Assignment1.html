@@ -10,7 +10,28 @@
     <script>
         //Create an array of countries literate the using all 3 loops and print values.
 
+        var countries=["INDIA","USA","NEWYORK","CHINA","JAPAN","FRANCE"];
+
+        //using for-loop
+
+        for(let i=1;i<=countries.length;i++){   //when u don't know array length,we can use lenght.property
+            document.write(i+ "." + countries[i]+"<br>");
+        }
+        document.write("<hr/>");
         
+        //using for-each loop
+
+        countries.forEach(function(value,index){
+            document.write(index+1+ " . " +value+"<br>")
+        });
+        document.write("<hr/>");
+
+        //using for-of loop
+
+        for(let ele of countries){
+            document.write(countries.indexOf(ele)+1+ "." +ele+"<br>");
+        }        
+
     </script>
     
 </body>
