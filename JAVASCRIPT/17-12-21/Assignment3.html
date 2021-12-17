@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove the boolean elements</title>
+</head>
+<body>
+    <script>
+        //Remove boolen in an array
+
+        var arr=[1,true,"ram",3,false];
+        
+        for(let i in arr){
+            if(typeof(arr[i])=="boolean"){
+                delete arr[i];
+            }
+        }
+        document.write(arr);
+        console.log(arr);
+    </script>
+</body>
+</html>

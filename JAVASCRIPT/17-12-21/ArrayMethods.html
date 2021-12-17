@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Methods</title>
+</head>
+<body>
+    <script>
+        var week=["sunday","Monday","tuesday","wednesday","thursady","friday","saturady"];
+
+        for (var i=0;i<week.length;i++){
+            document.write(i+ " " +week[i]+"<br>");
+        }
+
+        document.write("<hr/>");
+
+        document.write(week.reverse());//reverse  the element of an array
+
+        document.write("<hr/>");
+        
+        document.write(week.pop()+" removed from an array"); //Removes last element from an array
+
+        document.write("<hr/>");
+
+        document.write(week.push("Hello","Hiii")+"th element added to an array"); //adds to an element to an array. need to pass parameter( element) to waqnt to add.
+
+        document.write("<hr/>");
+
+        document.write(week.unshift("EverDay")+"th added to an array");//adds element beginning of an array.
+
+        document.write("<hr/>");
+
+        for (var i=0;i<week.length;i++){
+            document.write(i+ " " +week[i]+"<br>");
+        }
+
+
+    </script>
+</body>
+</html>
