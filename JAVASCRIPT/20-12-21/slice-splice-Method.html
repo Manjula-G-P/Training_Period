@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slice() and splice() Method</title>
+</head>
+<body>
+    <script>
+        var arr=["Rahul","Sonam","Sumith","Raj","Rohan"];
+        document.write("Orginal Array:"+arr+"<br>");
+
+        //slice Method
+        document.write("Slice Method:"+arr.slice(0,3)+"<br>");
+
+        //splice Method
+        //Remove all elements from index 2(includes index 2)
+        arr.splice(2,2)
+        document.write("Slice Method:"+arr+"<br>");
+
+
+        //Remove 2 elements from index 2
+        //it will remove index 2 and 3  element
+        arr.splice(2,2);
+        document.write("Slice2 Method:"+arr+"<br>");
+
+        //Remove 0 element from index 2 and insert "Dell" 
+        //It will nor remove anything but will insert "Dell"
+
+        
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Duplicate elements in an array</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 2, 3, 4];
+        let new_array = []; //for storing unqiue elements
+
+        for (let val of arr){
+            if(!new_array.includes(val)){
+                new_array.push(val);
+            }
+        }
+        document.write(new_array);
+
+
+
+    </script>
+</body>
+
+</html>

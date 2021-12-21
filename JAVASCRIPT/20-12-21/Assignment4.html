@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count the occurence of each name</title>
+</head>
+<body>
+    <script>
+        var arr=["Ram","Sham","Ram","Tina","Ram"];
+        var new_array=[];//for unique names
+
+
+        for (let name of arr){
+            if(!new_array.includes(name)){
+                new_array.push(name);
+                let count=0;
+                for(let Name of arr){
+                    if(name==Name){
+                        count+=1
+                    }
+                }
+                document.write(name+ " : " + count +"<br>");
+            }
+        }
+    </script>
+</body>
+</html>
