@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isNaN() Method</title>
+</head>
+<body>
+    <script>
+        //isNaN() if it is illegal or not
+        //true if number is equal to not a number
+        //illegal=>true
+
+        var a="50"; //first converts to number then tests=>50
+        var b=10;
+        var c=20;
+        var d="Hello";
+        if(isNaN(d)){ //d is not number
+            document.write("Not a number") //"Hello" cannot convert to Number
+        }
+        else{
+            document.write("Number")
+        }
+        document.write("<br>"+typeof(a)+"<br>");
+
+        document.write("<hr>");
+
+        if(NaN==NaN){
+            document.write("Equal");
+        }
+        else{
+            document.write("Not Equal");
+        }
+
+        document.write("<hr>");
+
+        document.write(Number.isNaN(d)+"<br>");
+        document.write(Number.isNaN("Hello")+"<br>");
+        document.write(Number.isNaN("5")+"<br>");
+        document.write(Number.isNaN(5)+"<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print * wherever number is there</title>
+</head>
+<body>
+    <script>
+        var str='ja1va 2sc3ript';
+        for(var chr of str){
+            if(chr>="a" && chr<="z" || chr==" "){
+                document.write(chr);
+            }
+            else{
+                 document.write("*");
+            }
+        }
+    </script>
+</body>
+</html>

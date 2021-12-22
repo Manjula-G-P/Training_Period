@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var number=21;
+        document.write(Number.MAX_VALUE+"<br>"); // largest positive value used in js
+        document.write(Number.MIN_VALUE+"<br>"); // smallest positive value used in js
+
+        document.write("<hr>");
+
+        //Integer user input
+        // var user=parseInt(prompt("Enter a Number:"));
+        // document.write("Entered Value is :"+user); //for other than number, if u enterd other value u ll get a NaN.
+
+        document.write("<hr>");
+
+        var date=parseInt(prompt("Enter a Number!"));
+        if(date>=1 || date<=31){
+            date=Number.NaN;
+            document.write("Enterd Value is:"+date);
+        }
+        else{
+            document.write("Entered date is :" + date);
+        }
+    
+
+
+    </script>
+</body>
+</html>
