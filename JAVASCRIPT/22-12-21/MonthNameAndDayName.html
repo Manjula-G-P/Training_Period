@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing the MonthName and DayName</title>
+</head>
+<body>
+    <script>
+        var tarikh=new Date();
+        document.write(tarikh+"<br>");
+
+        var month=tarikh.getMonth();
+        var day=tarikh.getDay();
+        document.write(getMonthName(month)+"<br>");
+        document.write(getDayName(day)+"<br>");
+
+        function getMonthName(monthnumber){
+            var monthname=["January","February","March","april","May","June","july","August","September","October","November","December"];
+            return monthname[monthnumber];
+        }
+
+        function getDayName(dayNumber){
+            var dayname=["Sunady","Monday","Tuesday","wednesday","Thursday","Friday","Saturday"];
+            return dayname[dayNumber];
+        }
+    </script>
+</body>
+</html>
