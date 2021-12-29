@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessing Properties</title>
+</head>
+<body>
+    <script>
+
+        var employee={
+            name:"Manu",
+            Age: 24, 
+            Company: "Intelehealth", 
+            Salary: 25000
+        };
+
+        //First Method
+        document.write("Employee Name is: " + employee['name'] + "<br>");
+        document.write("Employee Age is: " + employee['Age'] + "<br>");
+        document.write("Comapny of employee: " + employee['Company'] + "<br>");
+        document.write("Comapny of employee: " + employee['Salary'] + "<br>");
+
+        document.write("<hr>");
+
+        //second Method
+
+        document.write("Employee Name is: " + employee.name + "<br>");
+        document.write("Employee Age is: " + employee.Age + "<br>");
+        document.write("Comapny of employee: " + employee.Company+ "<br>");
+        document.write("Comapny of employee: " + employee.Salary + "<br>");
+
+        
+    </script>
+</body>
+</html>

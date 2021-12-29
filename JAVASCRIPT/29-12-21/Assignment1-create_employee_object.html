@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create employee objects</title>
+</head>
+<body>
+    <script>
+        var employee=new Object();
+
+        employee['name']="Manjula";
+        employee['Age']=24;
+        employee['COMPANY']="Intelehealth";
+        employee['salary']=25000;
+        employee['Internet_allowance']=800;
+        employee["total_salary"]=function (){
+            return employee.salary+employee.Internet_allowance;
+        }
+
+        document.write(employee.total_salary());
+        console.log(employee);
+
+    </script>
+</body>
+</html>
