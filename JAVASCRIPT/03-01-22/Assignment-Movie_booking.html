@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Booking</title>
+    <style>
+        fieldset {
+            border: 1px solid #000;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Booking Deatails</legend>
+
+        <div class="movie" style="padding-bottom: 20px;">
+            <label for="Movie"> Movie :-</label>
+            <select name="Movies">
+                <option value="select"> Select </option>
+                <option value="movie1"> Movie1 </option>
+                <option value="movie2"> Movie2 </option>
+                <option value="movie3"> Movie3 </option>
+                <option value="movie4"> Movie4 </option>
+                <option value="movie5"> Movie5 </option>
+            </select>
+        </div>
+
+        <div class="theaters" style="padding-bottom: 20px;">
+            <label for="Theater"> Theaters :-</label>
+            <select name="Theaters">
+                <option value="select"> Select </option>
+                <option value="theater1"> Theaters1 </option>
+                <option value="theater2"> Theaters2 </option>
+                <option value="theater3"> Theaters3 </option>
+            </select>
+        </div>
+
+        <div class="date" style="padding-bottom: 20px;">
+            <label for="date">Date :-</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div class="email" style="padding-bottom: 20px;">
+            <label for="email">Email :-</label>
+            <input type="email">
+        </div>
+
+        <div class="tickets" style="padding-bottom: 20px;">
+            <label for="ticket">Tickets :-</label>
+            <input type="number" id="ticket">
+        </div>
+
+        <button type="button" id="book-tickets">Book Tickets</button>
+
+        <div class="bill" style="padding-top: 20px;">
+            <label for="bill">Total Bill :-</label>
+            <p id="totalBill"></p> 
+          
+        </div>
+
+    </fieldset>
+
+    <p>Per ticket :- 100 /-</p>
+    <label>Discounts :-</label>
+    <ul>
+        <li>10% discount if number of booked shows >= 10</li>
+    </ul>
+
+    <script>
+        var btn=document.querySelector("#book-tickets");
+        var No_of_tickets=document.querySelector("#ticket");
+        var Total_bill=document.querySelector("#totalBill");
+
+        btn.addEventListener("click",function total_bill(){
+            var myVal=No_of_tickets.value;
+            var amt=myVal*100;
+            if(myVal>=10){
+                var discount=10;
+                var dis=amt-amt/10;
+                Total_bill.innerText=dis;
+            }
+            else{
+                Total_bill.innerText=amt;
+            }
+        })
+        
+
+    </script>
+</body>
+
+</html>
