@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse-hover</title>
+    <style>
+         p:hover{
+            background-color: aqua;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <p id="paragraph" onmouseover="over();" onmouseout="out();">Hello everyone</p>
+    <script> 
+        var par=document.getElementById('paragraph');
+        //first method using hover selector
+
+       /* function over(){   // second method
+            par.style.backgroundColor='lightblue';
+        }
+
+        function out(){
+            par.style.background="none";
+        } */
+
+        // par.addEventListener("mouseover",function (){ // 3rd method
+        //     par.style.backgroundColor="red";
+        // }); 
+
+
+
+     </script>
+
+</body>
+</html>
