@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class='para'> Hello World </h1>
+    <div class='div1'>
+        <h2 class='para div1'> Hello h2 </h2>
+        <p class='para'> Hello para </p>
+    </div>
+    <h3 class='myh3'> Hello h3 </h3>
+    <p class='myh3'> Hello <em> I am em </em> Para <span> I am span</span></p>
+    <div class='myh3 div1'> I am div...</div>
+    <div id='div2'> I am new div </div>
+    <div> I am last div...</div>
+
+    <script>
+        const liveElements=document.getElementsByClassName('div1');
+        console.log(liveElements);
+
+        const notLiveElements=document.querySelectorAll('.div1');
+        console.log(notLiveElements)
+
+        console.log(liveElements.length);
+        console.log(notLiveElements.length);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>We are Learning JS</h1>
+    <h1 class='para myclass'> Hello World</h1>
+    <h2> Now </h2>
+    <p class='para'><span class='myspan'>Banglore</span><em> World </em> <span> Js </span></p>
+    <p class='myclass'><span class='myspan'> Bye </span> Banglore </p>
+    <div id='show'>
+        <p>1st p inside div</p>
+        <p class='para'> 2nd p inside div </p>
+    </div>
+    <p id='show1'> I am Paragraph </p>
+
+    <script>
+        //Element Selector
+        var result= document.querySelector('p');
+        //first come first get
+        var result=document.querySelector('p,h1');  //which one will come first that one will print
+        document.write(result);
+        console.log(result);
+
+        //ID selector
+        var result1= document.querySelector('#show1');
+        //first come first get
+        var result1=document.querySelector('#show,#show1');//which one will come first that one will print
+        document.write(result1);
+        console.log(result1);
+
+
+        //Class Selector
+        var result3=document.querySelector(".para");
+        //first come first get
+        var result3=document.querySelector('.para,.myclass');//which one will come first that one will print
+        document.write(result3);
+        console.log(result3);
+
+        var res=document.querySelector('p.para > span.myspan'); //can find inside tags
+        document.write(res);
+        console.log(res);
+    </script>
+</body>
+</html>

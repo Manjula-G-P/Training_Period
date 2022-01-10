@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <ul class='myul'>
+        <li class='list-item'>One</li>
+        <li class='list-item'>Two</li>
+        <li id='three'>Three</li>
+    </ul>
+
+    <script>
+        const liveElements=document.getElementsByClassName('list-item');
+        console.log(liveElements);
+
+        const notLiveElements=document.querySelectorAll('.list-item');
+        console.log(notLiveElements)
+
+        console.log(liveElements.length);
+        console.log(notLiveElements.length);
+
+        // document.getElementById('.three').ClassName='list-item'; //error
+        // console.log(liveElements.length);
+        // console.log(notLiveElements.length);
+
+        // console.log(liveElements);
+        // console.log(notLiveElements);
+
+
+    </script>
+</body>
+</html>

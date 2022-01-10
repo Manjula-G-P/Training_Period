@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class='para'> Hello World </h1>
+    <div class='div1'>
+        <h2 class='para div1'> Hello h2 </h2>
+        <p class='para'> Hello para </p>
+    </div>
+    <h3 class='myh3'> Hello h3 </h3>
+    <p class='myh3'> Hello <em> I am em </em> Para <span> I am span</span></p>
+    <div class='myh3 div1'> I am div...</div>
+    <div id='div2'> I am new div </div>
+    <div> I am last div...</div>
+
+    <script>
+    //Element selector
+    var result = document.querySelector("p");
+   // First Come First Get
+    var result = document.querySelector("p, h1");
+    document.write(result);
+    console.log(result);
+
+    //ID selector
+    //var result1 = document.querySelector("#para");
+    //First Come First Get
+    //var result = document.querySelector("#myh3, #myh3 div1");
+    //document.write(result1);
+    //console.log(result1);
+
+    //Class selector
+    //var result2 = document.querySelector(".para");
+    //First Come First Get
+    //var result2 = document.querySelector(".para, .div1");
+    //document.write(result2);
+    //console.log(result
+    </script>
+</body>
+</html>
