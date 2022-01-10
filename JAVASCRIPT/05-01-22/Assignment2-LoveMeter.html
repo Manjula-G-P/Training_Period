@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         padding: 150px;
+         margin-left: 400px;
+         font-size: 20px;
+        }
+        fieldset {
+            border: 1px soloid #000;
+            width: 50%;
+            text-align: center;
+        
+        }
+
+        #range {
+            border-radius: 25px;
+            padding: 5PX;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            Love Meter
+        </legend>
+        <label>First Name :</label>
+        <input type="text" id="fname" /><br><br>
+        <labe>Second Name : </labe>
+        <input type='text' id='sname' /><br>
+        <p id="errorname" style="color: red;"></p>
+        <button id='btn' onclick="calculate();">Calculate</button><br>
+        <h3>Total Love Meter:</h3>
+        <input type="text" id='range' />
+    </fieldset>
+
+    <script>
+        function calculate() {
+            var fname = document.getElementById('fname').value;
+            var sname = document.getElementById('sname').value;
+            var data = Math.floor(Math.random() * 100);
+            if (fname && sname) {
+                document.getElementById('range').value = data + '%';
+            }
+            else {
+                document.getElementById('errorname').innerHTML = "***please enter name of your's and your's partner***";
+            }
+            
+
+        }
+    </script>
+</body>
+
+</html>

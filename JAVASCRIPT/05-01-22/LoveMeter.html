@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.divv
+    {
+    border-radius: 25px; border: 2px solid ; padding: 10px; width: 98%; height: 10px; text-align: left;
+}
+.divvv
+    {
+    border-radius: 25px; border-color: black; padding: 10px;height: 9px;position:absolute; margin-top: -11px;    margin-left: -12px;
+}
+    </style>
+</head>
+<body>
+<div style="padding: 10% 20% ;">
+    <fieldset align="center" style="width: 50%; position: absolute;">
+        <legend align="center">Love Meter:</legend> 
+     First Name: <input type="text" name=" "  id="name" ><br><br>
+     Second Name: <input type="text" name=" "  id="Sname"><br><br>
+     <button onclick="checkloveper()"> Calculate </button><br>
+     <h1>Total Love Meter:</h1>
+     <div class="divv">
+     <input type="text" class="divvv" name=""  id="lovevalue" />
+    </div>
+    </fieldset>
+</div>
+<script>
+    function checkloveper()
+    {
+        var name = document.getElementById('name').value;
+        var Sname = document.getElementById('Sname').value;
+
+        if(name == "")
+        {   
+            alert('Please enter your first name');
+        }
+        else if (name.length <=2 ) 
+        {
+        alert('Min lenght is 3')
+        }
+        else if(!isNaN(name))
+        {
+        alert('Numbers are not allowed');
+        }
+        else if(Sname == "")
+        {
+        alert('Please enter your second name');
+        }
+        else if (Sname.length <=2 )
+        {
+        alert('Min lenght is 3')
+        }
+        else if(!isNaN(Sname))
+        {
+        alert('Numbers are not allowed');
+        }
+        else
+        {
+        var lovdata = Math.random() * 100;
+        lovdata = Math.floor(lovdata);
+        document.getElementById('lovevalue').value = lovdata + "%"; 
+        document.getElementById("lovevalue").style.width = lovdata + "%";
+        if(lovdata<=35)
+        {
+        document.getElementById("lovevalue").style.backgroundColor = "blue";
+        }
+        else if(lovdata>35 && lovdata<=65)
+        {
+        document.getElementById("lovevalue").style.backgroundColor = "orange";
+        }
+        else
+        {document.getElementById("lovevalue").style.backgroundColor = "red";}
+    }
+    }
+</script>
+</body>
+
+</html>
