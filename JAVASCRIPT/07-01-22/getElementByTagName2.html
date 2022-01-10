@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> we are learning JS</h1>
+    <h1> Hello World</h1>
+    <h2> Now </h2>
+    <p id='para'>Hello <span>World</span></p>
+    <P id='find'> <span>Bye</span>World</P>
+    <div>
+        <p>1st inside div</p>
+        <p>2nd inside div</p>
+    </div>
+    <script>
+        //whole document
+        var result=document.getElementsByTagName("*");
+        document.write(result);
+        console.log(result);
+
+        //only Inside 
+        var result1=document.body.getElementsByTagName("*");
+        document.write(result1);
+        console.log(result1);
+
+    </script>
+</body>
+</html>

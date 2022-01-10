@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title class="para">Document</title>
+</head>
+<body>
+    <h1>We are Learning JS</h1>
+   <h1 class="para myclass"> Hello world</h1> 
+   <h2>Now</h2>
+   <p class="para">Hello<span>Banglore</span><em>world</em><span>JS</span></p>
+   <p class="myclass"><span>Bye</span>Banglore</p>
+   <div id="show">
+    <p>1st p inside div</p>
+    <p class="para">2nd p inside div</p>
+   </div>
+
+   <script>
+       var result=document.getElementsByClassName("para")[0];
+       document.write(result);
+       console.log(result);
+
+       var data=document.getElementsByClassName("para");
+       var len=data.length;
+       for(let i=0;i<data;i++){
+           var result1=document.getElementsByClassName("para")[i];
+           document.write(result1+"<br>");
+           console.log(result1);
+       }
+   </script>
+</body>
+</html>
