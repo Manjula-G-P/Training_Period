@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='myid'>
+        <!---This is comment----> 
+        <span>we are learning JS </span>
+    </h1>
+    <p id='myid1'> I am Paragraph</p>
+    <p id='myid2'><span>I am a element</span>I am a paragraph</p>
+
+    <script>
+        var result=document.getElementById('myid');
+        //access one by one using index number
+        console.log(result.childNodes[0]);
+        console.log(result.children[0]);
+
+        //access all using loop with length property
+        //find length
+        var ChNodelen=result.childNodes.length;
+        //console.log(ChNodelen);
+        var clen=result.children.length;
+        // console.log(clen);
+
+        //for loop for chlidNodes
+        for(let i=0;i<ChNodelen;i++){
+            console.log(result.childNodes[i]);
+        }
+
+        //for loop for chlildren
+        for(let i=0;i<clen;i++){
+            console.log(result.children[i]);
+        }
+    </script>
+</body>
+</html>
