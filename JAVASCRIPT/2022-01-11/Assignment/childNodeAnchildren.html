@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id='myid'>
+        hello div 
+        <h1> We are Learning Javascript</h1>
+        <!---This is comment--->
+        <h1>I am h1</h1>
+    </div>
+    
+    <script>
+    var result=document.getElementById('myid');
+    //it includes any text node, comment node and any whitespaces, tab, enter etc
+    console.log(result.childNodes);
+    //it ignores text Node , comment Node, and any whitespace
+    console.log(result.children);
+
+    </script>
+</body>
+</html>

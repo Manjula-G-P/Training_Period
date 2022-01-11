@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='myid'>
+        <!----comment---->
+        <h1> We are Learning Javascript</h1>
+        <!---This is comment--->
+        <h1>I am h1</h1> 
+    </div>
+
+    <script>
+       var result=document.getElementById('myid');
+        console.log(result.firstChild.nextSibling);
+        console.log(result.firstChild.nextElementSibling);
+        //  result.firstChild.nextElementSibling.textContent=" I am learning DOM";
+
+    </script>
+</body>
+</html>
